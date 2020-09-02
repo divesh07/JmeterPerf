@@ -1,0 +1,21 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1599072277903,264,Http Sampler,301,Moved Permanently,Thread Group 1-1,,true,,337,124,1,1,http://reqres.in/api/users?page=2,264,0,192
+1599072278172,96,Http Sampler,301,Moved Permanently,Thread Group 1-1,,true,,337,124,2,2,http://reqres.in/api/users?page=2,96,0,43
+1599072278262,99,Http Sampler,301,Moved Permanently,Thread Group 1-2,,true,,337,124,1,1,http://reqres.in/api/users?page=2,99,0,44
+1599072278362,119,Http Sampler,301,Moved Permanently,Thread Group 1-2,,true,,337,124,1,1,http://reqres.in/api/users?page=2,119,0,49
+1599072278761,110,Http Sampler,301,Moved Permanently,Thread Group 1-3,,true,,337,124,1,1,http://reqres.in/api/users?page=2,110,0,54
+1599072278871,99,Http Sampler,301,Moved Permanently,Thread Group 1-3,,true,,337,124,1,1,http://reqres.in/api/users?page=2,99,0,46
+1599072279263,106,Http Sampler,301,Moved Permanently,Thread Group 1-4,,true,,337,124,1,1,http://reqres.in/api/users?page=2,106,0,51
+1599072279370,97,Http Sampler,301,Moved Permanently,Thread Group 1-4,,true,,337,124,1,1,http://reqres.in/api/users?page=2,97,0,46
+1599072279763,149,Http Sampler,301,Moved Permanently,Thread Group 1-5,,true,,337,124,1,1,http://reqres.in/api/users?page=2,149,0,88
+1599072279913,114,Http Sampler,301,Moved Permanently,Thread Group 1-5,,true,,337,124,1,1,http://reqres.in/api/users?page=2,114,0,51
+1599072280261,115,Http Sampler,301,Moved Permanently,Thread Group 1-6,,true,,337,124,1,1,http://reqres.in/api/users?page=2,115,0,57
+1599072280376,98,Http Sampler,301,Moved Permanently,Thread Group 1-6,,true,,337,124,1,1,http://reqres.in/api/users?page=2,98,0,44
+1599072280763,105,Http Sampler,301,Moved Permanently,Thread Group 1-7,,true,,337,124,1,1,http://reqres.in/api/users?page=2,105,0,52
+1599072280869,101,Http Sampler,301,Moved Permanently,Thread Group 1-7,,true,,337,124,1,1,http://reqres.in/api/users?page=2,101,0,47
+1599072281262,118,Http Sampler,301,Moved Permanently,Thread Group 1-8,,true,,337,124,1,1,http://reqres.in/api/users?page=2,118,0,53
+1599072281380,103,Http Sampler,301,Moved Permanently,Thread Group 1-8,,true,,337,124,1,1,http://reqres.in/api/users?page=2,103,0,47
+1599072281760,106,Http Sampler,301,Moved Permanently,Thread Group 1-9,,true,,337,124,1,1,http://reqres.in/api/users?page=2,106,0,51
+1599072281867,114,Http Sampler,301,Moved Permanently,Thread Group 1-9,,true,,337,124,1,1,http://reqres.in/api/users?page=2,114,0,44
+1599072282260,107,Http Sampler,301,Moved Permanently,Thread Group 1-10,,true,,337,124,1,1,http://reqres.in/api/users?page=2,107,0,50
+1599072282367,112,Http Sampler,301,Moved Permanently,Thread Group 1-10,,true,,337,124,1,1,http://reqres.in/api/users?page=2,112,0,53

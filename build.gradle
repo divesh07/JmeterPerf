@@ -1,5 +1,6 @@
 plugins {
   id 'java'
+  id "net.foragerr.jmeter" version "1.0.5-2.13"
 }
 
 group 'common.actions'
@@ -12,6 +13,43 @@ repositories {
 }
 
 
+
 dependencies {
-  compile group: 'com.github.kulya', name: 'jmeter-gradle-plugin', version: '1.3.4-2.13'
+  //compile group: 'com.github.kulya', name: 'jmeter-gradle-plugin', version: '1.3.4-2.13'
+  // https://mvnrepository.com/artifact/commons-io/commons-io
+  compile group: 'commons-io', name: 'commons-io', version: '2.6'
+  // https://mvnrepository.com/artifact/org.apache.jmeter/ApacheJMeter_core
+  compile group: 'org.apache.jmeter', name: 'ApacheJMeter_core', version: '5.0'
+  // https://mvnrepository.com/artifact/org.apache.jmeter/ApacheJMeter_http
+  compile group: 'org.apache.jmeter', name: 'ApacheJMeter_http', version: '5.0'
+  // https://mvnrepository.com/artifact/org.apache.jmeter/ApacheJMeter_report
+  //compile group: 'org.apache.jmeter', name: 'ApacheJMeter_report', version: '5.0'
+
+  // https://mvnrepository.com/artifact/kg.apc/jmeter-plugins-extras-libs
+  compile (group: 'kg.apc', name: 'jmeter-plugins-extras-libs', version: '1.4.0'){
+    exclude group: 'org.apache.jmeter'
+  }
+  // https://mvnrepository.com/artifact/org.testng/testng
+  testCompile group: 'org.testng', name: 'testng', version: '6.14.3'
+  // https://mvnrepository.com/artifact/org.apache.jmeter/ApacheJMeter_components
+  compile group: 'org.apache.jmeter', name: 'ApacheJMeter_components', version: '5.0'
+  // https://mvnrepository.com/artifact/org.apache.jmeter/jorphan
+  compile group: 'org.apache.jmeter', name: 'jorphan', version: '5.0'
+  // https://mvnrepository.com/artifact/org.apache.commons/commons-math3
+  //compile group: 'org.apache.commons', name: 'commons-math3', version: '3.4.1'
+  // https://mvnrepository.com/artifact/org.apache.commons/commons-pool2
+  //compile group: 'org.apache.commons', name: 'commons-pool2', version: '2.3'
+  // https://mvnrepository.com/artifact/org.apache.jmeter/ApacheJMeter_java
+  compile (group: 'org.apache.jmeter', name: 'ApacheJMeter_java', version: '2.6') {
+    exclude group: 'org.apache.commons'
+    exclude group: 'org.apache.commons'
+  }
+  //compile group: 'org.apache.jmeter', name: 'ApacheJMeter_java', version: '2.13'
+
+}
+
+jmeter {
+  jmTestFiles = [file("src/test/jmeter/Jmeter.jmx")]
+  jmSystemPropertiesFiles = [file("src/test/jmeter/jmeter.properties")]
+  enableExtendedReports = true
 }
